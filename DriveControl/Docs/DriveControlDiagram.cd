@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SwarmIntelligence.Logic.DriveControl.DriveController">
+    <Position X="4.5" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ABAAADQAACBEAYAAggBBQRAACAIAAACIogoAUCAAAQA=</HashCode>
+      <FileName>DriveControl\DriveController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SwarmIntelligence.Logic.DriveControl.DriveCommandManager">
+    <Position X="10" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAABAAACAAAJAEgIFAQBAAAAIAAAAApgAgUCAAAQA=</HashCode>
+      <FileName>DriveControl\DriveCommandManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SwarmIntelligence.Logic.DriveControl.Interfaces.DriveCommandGenerator">
+    <Position X="7.75" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAggAAAAAAAA=</HashCode>
+      <FileName>DriveControl\DriveCommandGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SwarmIntelligence.Logic.DriveControl.DriveCommandDispatcher">
+    <Position X="13" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAACAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>DriveControl\DriveCommandDispatcher.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SwarmIntelligence.Logic.DriveControl.AgentCommandSlot">
+    <Position X="1.5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAQAAAAQAAAAAAAABAAAAAAAAAAAAAAAACBAAQA=</HashCode>
+      <FileName>DriveControl\AgentCommandSlot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

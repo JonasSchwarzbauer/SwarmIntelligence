@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SwarmIntelligence.Logic.MapControl.MapController">
+    <Position X="1.5" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAgIAAAAACAEAIAAAEAAAAlAABcQgIQAoIAIQIgAAAA=</HashCode>
+      <FileName>MapControl\MapController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SwarmIntelligence.Logic.MapControl.USBDataProvider">
+    <Position X="4.5" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAABAAAAAAAAABAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>MapControl\USBDataProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SwarmIntelligence.Logic.MapControl.MapQueryService">
+    <Position X="10.25" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAACAQAAAAAAAAAAAFAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MapControl\MapQueryService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SwarmIntelligence.Logic.MapControl.MapUpdateCoordinator">
+    <Position X="13" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAACAQAAAAAAAAAAAAAAAEAAAAACAAAAAgAAAI=</HashCode>
+      <FileName>MapControl\MapUpdateCoordinator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SwarmIntelligence.Logic.MapControl.ObstacleStore">
+    <Position X="5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAgAIAAAgQAAEAAAAAAQEAIAAJAAAA=</HashCode>
+      <FileName>MapControl\ObstacleStore.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SwarmIntelligence.Logic.MapControl.VehicleDataBuffer">
+    <Position X="10.5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AEAAIAAAAAAAAAAAAAIAAAACAAAAABAAACAAAADAAAA=</HashCode>
+      <FileName>MapControl\VehicleDataBuffer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SwarmIntelligence.Logic.MapControl.AgentStateStore">
+    <Position X="7.5" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABQAAAAAAAAAAAAACCAAEAAAAAAQAAAAA=</HashCode>
+      <FileName>MapControl\AgentStateStore.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SwarmIntelligence.Logic.MapControl.MapWorker">
+    <Position X="7.5" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAIAQAAAAAAAIAAgAgAAAAAAAIAAAQAAQAAQAAAAAA=</HashCode>
+      <FileName>MapControl\MapWorker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
