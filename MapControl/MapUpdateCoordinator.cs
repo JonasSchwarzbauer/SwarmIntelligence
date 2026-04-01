@@ -32,19 +32,19 @@ namespace SwarmIntelligence.Logic.MapControl
             _agentStateStore.UpdateAgentState(vehicleData);
             AgentStateUpdated?.Invoke(this, new AgentDataUpdatedEventArgs(vehicleData));
 
-            //var obstaclePosition = CalculateObstaclePosition(vehicleData);
+            var obstaclePosition = CalculateObstaclePosition(vehicleData);
 
-            //if (IsCloseToAgent(obstaclePosition))
-            //{
-            //    return;
-            //}
+            if (IsCloseToAgent(obstaclePosition))
+            {
+                return;
+            }
 
-            //if (vehicleData.FrontalDistance >= MinObstacleDetectionDistanceM && vehicleData.FrontalDistance <= MaxObstacleDetectionDistanceM
-            //    && obstaclePosition.TryToGridIndices(_obstacleStore.CellSize, _obstacleStore.GridWidth, _obstacleStore.GridHeight, out var cell))
-            //{
-            //    _obstacleStore.UpdateCell(cell.X, cell.Y, ObstacleType.Physical);
-            //    MapUpdated?.Invoke(this, new MapUpdatedEventArgs(obstaclePosition, cell, true));
-            //}
+            if (vehicleData.FrontalDistance >= MinObstacleDetectionDistanceM && vehicleData.FrontalDistance <= MaxObstacleDetectionDistanceM
+                && obstaclePosition.TryToGridIndices(_obstacleStore.CellSize, _obstacleStore.GridWidth, _obstacleStore.GridHeight, out var cell))
+            {
+                _obstacleStore.UpdateCell(cell.X, cell.Y, ObstacleType.Physical);
+                MapUpdated?.Invoke(this, new MapUpdatedEventArgs(obstaclePosition, cell, true));
+            }
         }
 
         public void UpdateGrid(ObstacleCellDto cell)
