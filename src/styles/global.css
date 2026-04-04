@@ -1,0 +1,218 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Swarm Intelligence — Minimal Dark Design System
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Fonts ──────────────────────────────────────────────────────── */
+  --font:      'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace;
+
+  /* ── Backgrounds ────────────────────────────────────────────────── */
+  --bg:             #0c0e14;
+  --surface:        #14171f;
+  --surface-raised: #1c2029;
+  --surface-hover:  #222730;
+
+  /* ── Text ───────────────────────────────────────────────────────── */
+  --text:   #e4e7ed;
+  --text-2: #8c93a1;
+  --text-3: #4f5666;
+
+  /* ── Accent ─────────────────────────────────────────────────────── */
+  --accent:      #6c8cff;
+  --accent-dim:  rgba(108, 140, 255, 0.10);
+  --accent-border: rgba(108, 140, 255, 0.20);
+
+  /* ── Status ─────────────────────────────────────────────────────── */
+  --green:        #34d399;
+  --green-dim:    rgba(52, 211, 153, 0.10);
+  --green-border: rgba(52, 211, 153, 0.25);
+
+  --amber:        #fbbf24;
+  --amber-dim:    rgba(251, 191, 36, 0.10);
+  --amber-border: rgba(251, 191, 36, 0.25);
+
+  --red:          #f87171;
+  --red-dim:      rgba(248, 113, 113, 0.10);
+  --red-border:   rgba(248, 113, 113, 0.25);
+
+  --purple:       #a78bfa;
+  --purple-dim:   rgba(167, 139, 250, 0.10);
+
+  /* ── Borders ────────────────────────────────────────────────────── */
+  --border:    rgba(255, 255, 255, 0.06);
+  --border-hi: rgba(255, 255, 255, 0.12);
+
+  /* ── Sizing ─────────────────────────────────────────────────────── */
+  --radius:    8px;
+  --radius-sm: 4px;
+  --nav-width: 220px;
+  --nav-rail:  56px;
+}
+
+/* ── Reset ─────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #app {
+  height: 100%;
+  background: var(--bg);
+}
+
+.v-application {
+  font-family: var(--font) !important;
+  font-size: 15px !important;
+  background: var(--bg) !important;
+}
+
+/* ── Typography ────────────────────────────────────────────────────── */
+.mono { font-family: var(--font-mono) !important; }
+
+/* Small uppercase label */
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+
+/* ── Card / Panel ──────────────────────────────────────────────────── */
+.card {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: var(--border-hi) !important;
+}
+
+.card-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-2);
+  padding: 14px 16px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Metric value ──────────────────────────────────────────────────── */
+.value {
+  font-family: var(--font-mono) !important;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.unit {
+  font-family: var(--font-mono) !important;
+  font-size: 0.86rem;
+  color: var(--text-2);
+  margin-left: 4px;
+  font-weight: 400;
+}
+
+/* ── Status dot ────────────────────────────────────────────────────── */
+.dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.dot--online  { background: var(--green); }
+.dot--warn    { background: var(--amber); }
+.dot--error   { background: var(--red); }
+.dot--offline { background: var(--text-3); }
+
+/* ── Page header ───────────────────────────────────────────────────── */
+.page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.page-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.page-sub {
+  font-size: 0.75rem;
+  color: var(--text-3);
+  letter-spacing: 0.02em;
+}
+
+/* ── Badge ─────────────────────────────────────────────────────────── */
+.badge {
+  font-family: var(--font-mono) !important;
+  font-size: 0.75rem;
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.02em;
+}
+
+/* ── Flag tag ──────────────────────────────────────────────────────── */
+.flag {
+  font-family: var(--font-mono) !important;
+  font-size: 0.72rem;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.02em;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  color: var(--text-2);
+}
+.flag--warn  { background: var(--amber-dim); color: var(--amber); border-color: var(--amber-border); }
+.flag--info  { background: var(--accent-dim); color: var(--accent); border-color: var(--accent-border); }
+.flag--error { background: var(--red-dim); color: var(--red); border-color: var(--red-border); }
+
+/* ── Table overrides ───────────────────────────────────────────────── */
+.si-table .v-data-table__th {
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  color: var(--text-3) !important;
+  background: var(--surface-raised) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.si-table .v-data-table__td {
+  font-family: var(--font-mono) !important;
+  font-size: 0.9rem !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.si-table tbody tr:hover td {
+  background: var(--surface-hover) !important;
+}
+
+/* ── Empty state ───────────────────────────────────────────────────── */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+  color: var(--text-3);
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.14); }
+
+/* ── Vuetify base overrides ────────────────────────────────────────── */
+.v-card { font-family: var(--font) !important; }
+.v-list-item__content { font-family: var(--font) !important; }
+.v-table { background: transparent !important; }
+.v-table > .v-table__wrapper > table { background: transparent !important; }
